@@ -17,9 +17,10 @@ const FormInput = (props: FormInputProps) => {
     <div className="mb-2">
         <Label htmlFor={name}>{label}</Label>
         <Input 
-            name="firstName" 
+            name={name} 
             type={type} 
-            placeholder={placeholder} defaultValue={defaultValue}/>
+            placeholder={placeholder} 
+            defaultValue={defaultValue}/>
     </div>
   )
 }
